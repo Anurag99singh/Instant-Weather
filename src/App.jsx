@@ -87,6 +87,7 @@ function App() {
   function handleClick() {
     if (navigator.geolocation)
       navigator.geolocation.getCurrentPosition(success);
+    setInputLocation("");
   }
   return (
     <div className="container">
