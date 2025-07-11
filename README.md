@@ -1,12 +1,35 @@
-# React + Vite
+# 🌤️ Instant Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instant Weather is a sleek and responsive React application that allows users to quickly get daily weather forecasts by entering a location or using their current GPS location.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Search weather by city name
+- 📍 Detect user’s current location (Geolocation API)
+- 🧊 Max/Min Temperature, Feels Like temperature
+- 🌦️ Weather condition with emojis and labels
+- 📅 Daily forecast for the next 7 days
+- 🧭 Beautiful animations and hover effects
+- 🌓 Mobile-responsive and clean UI design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Built With
+
+- ⚛️ React.js
+- 🧰 Vite (or CRA) – dev environment
+- 📦 CSS3 for styling & animations
+- 🌐 Open-Meteo API for weather data
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/instant-weather.git
+cd instant-weather
+```
