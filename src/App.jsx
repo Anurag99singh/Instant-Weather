@@ -23,7 +23,7 @@ function App() {
   } = weatherdetails || {};
 
   let { temperature_2m_max: maxUnit } = unitDetails || {};
-
+  // to get the input location and based on that set lat and lng to fethc the wether details
   useEffect(() => {
     const controller = new AbortController();
 
@@ -61,18 +61,18 @@ function App() {
       controller.abort();
     };
   }, [inputLocation]);
-
+  //to fetch the weather details based on the lat lng given by the above use effect
   useEffect(() => {
     async function fetchWeatherData() {
       if (!latitude || !longitude) {
         setRecievedInfo("");
       }
-      console.log(latitude, longitude);
+      // console.log(latitude, longitude);
       let rawData = await fetch(
         `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_mean`
       );
       let data = await rawData.json();
-      console.log(data);
+      // console.log(data);
       let details = [data.daily, data.daily_units];
       setRecievedInfo(details);
     }
